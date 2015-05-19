@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="be.solidx.ImageViewer" version="0.1">
+    
+    <name>ImageViewer</name>
+    <description>Display a zoomable image view for a given URL</description>
+    <license>Apache 2.0</license>
+    <keywords>image,viewer</keywords>
+
+    <js-module src="www/imageViewer.js" name="ImageViewer">
+        <clobbers target="window.ImageViewer" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ImageViewer">
+                <param name="ios-package" value="ImageViewer"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/ImageViewer/ImageViewer/ImageViewer.h" />
+        <header-file src="src/ios/ImageViewer/ImageViewer/ImageViewerViewController.h" />
+        <source-file src="src/ios/ImageViewer/ImageViewer/ImageViewer.m" />
+        <source-file src="src/ios/ImageViewer/ImageViewer/ImageViewerViewController.m" />
+        
+        <resource-file src="src/ios/ImageViewer/ImageViewer/ImageViewerViewController.xib"/>
+    </platform>
+
+</plugin>

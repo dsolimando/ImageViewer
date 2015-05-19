@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewerViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="OaP-Xa-6gj" id="Ku0-bA-K0P"/>
+                <outlet property="backgroundView" destination="dYG-xA-f79" id="DL5-6h-oQF"/>
+                <outlet property="imageView" destination="Z6v-gh-Jop" id="NGs-DK-vPH"/>
+                <outlet property="scrollView" destination="TfK-l9-RrF" id="OVP-DC-D4J"/>
+                <outlet property="view" destination="oZp-4e-JPO" id="0UD-vH-nle"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oZp-4e-JPO">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYG-xA-f79">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-Xa-6gj">
+                            <rect key="frame" x="290" y="290" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-l9-RrF">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6v-gh-Jop">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="PzT-MJ-CMI" appends="YES" id="dig-0f-MIR"/>
+                                    </connections>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="leading" secondItem="TfK-l9-RrF" secondAttribute="leading" id="0Wn-gA-yxm"/>
+                                <constraint firstAttribute="trailing" secondItem="Z6v-gh-Jop" secondAttribute="trailing" id="80R-wk-7QC"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="top" secondItem="TfK-l9-RrF" secondAttribute="top" id="9tT-Ps-v8c"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerX" secondItem="TfK-l9-RrF" secondAttribute="centerX" id="Ibi-5l-OJz"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerY" secondItem="TfK-l9-RrF" secondAttribute="centerY" id="UrZ-fn-q1h"/>
+                                <constraint firstAttribute="bottom" secondItem="Z6v-gh-Jop" secondAttribute="bottom" id="yib-Dc-hie"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="BYH-Gf-Flk" appends="YES" id="XuS-0i-Er9"/>
+                                <outletCollection property="gestureRecognizers" destination="PzT-MJ-CMI" appends="YES" id="GL2-mk-rRO"/>
+                            </connections>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="leading" secondItem="dYG-xA-f79" secondAttribute="leading" id="88T-X6-P5F"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerX" secondItem="OaP-Xa-6gj" secondAttribute="centerX" id="R3D-Oe-2lY"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerY" secondItem="OaP-Xa-6gj" secondAttribute="centerY" id="ULv-f4-kl9"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="top" secondItem="dYG-xA-f79" secondAttribute="top" id="WfL-uO-miO"/>
+                        <constraint firstItem="OaP-Xa-6gj" firstAttribute="centerX" secondItem="dYG-xA-f79" secondAttribute="centerX" id="m17-6d-K4P"/>
+                        <constraint firstItem="OaP-Xa-6gj" firstAttribute="centerY" secondItem="dYG-xA-f79" secondAttribute="centerY" id="voe-Da-HEJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dYG-xA-f79" secondAttribute="bottom" id="05E-dj-6Yi"/>
+                <constraint firstItem="dYG-xA-f79" firstAttribute="leading" secondItem="oZp-4e-JPO" secondAttribute="leading" id="3me-IR-Krr"/>
+                <constraint firstAttribute="trailing" secondItem="dYG-xA-f79" secondAttribute="trailing" id="8Md-g3-rVg"/>
+                <constraint firstItem="dYG-xA-f79" firstAttribute="top" secondItem="oZp-4e-JPO" secondAttribute="top" id="v4K-9G-8eq"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="529" y="541"/>
+        </view>
+        <tapGestureRecognizer numberOfTapsRequired="2" id="BYH-Gf-Flk">
+            <connections>
+                <action selector="onDoubleTap:" destination="-1" id="KXN-uN-1bm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <swipeGestureRecognizer direction="up" id="PzT-MJ-CMI">
+            <connections>
+                <action selector="onSwipe:" destination="-1" id="Y6E-PB-8bJ"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+</document>
