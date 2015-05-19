@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="be.solidx.ImageViewer" version="0.1">
+        id="be.solidx.ImageViewer" version="1.0.0">
     
     <name>ImageViewer</name>
     <description>Display a zoomable image view for a given URL</description>
