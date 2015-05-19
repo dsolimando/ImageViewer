@@ -7,6 +7,9 @@
     <license>Apache 2.0</license>
     <keywords>image,viewer</keywords>
 
+    <repo>https://github.com/dsolimando/ImageViewer.git</repo>
+    <issue>https://github.com/dsolimando/ImageViewer/issues</issue>
+
     <js-module src="www/imageViewer.js" name="ImageViewer">
         <clobbers target="window.ImageViewer" />
     </js-module>
