@@ -27,8 +27,6 @@
     self.panGestureRecognizer.delegate = self;
     self.view.contentMode = UIViewContentModeScaleAspectFit;
     
-    
-    
     self.closeButton.transform = CGAffineTransformMakeRotation(M_PI_2/2);
     
     dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0);
@@ -72,6 +70,7 @@
 - (IBAction)onButtonClick:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
         self.view.alpha = 0;
+        self.imageView.alpha = 0;
     } completion:^(BOOL completed){
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
@@ -119,11 +118,11 @@
 
 -(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
     
-    if (scale == 1) {
+    if (self.view.frame.size.height >= _fittedImageSize*scale) {
         [UIView animateWithDuration:0.2 animations:^{
             self.closeButton.alpha = 1;
         }];
-       
+       self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
     else {
         int insetTop = -((self.imageView.frame.size.height/2) - (_fittedImageSize*scale/2));
