@@ -9,13 +9,13 @@
 #import "ImageViewerViewController.h"
 
 @implementation ImageViewerViewController {
-    BOOL _swipe;
+    BOOL _leave;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _swipe = false;
+    _leave = false;
     
     self.imageView.alpha = 0;
     
@@ -69,6 +69,7 @@
 
 - (IBAction)onButtonClick:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
+        self.wrapperView.alpha = 0;
         self.view.alpha = 0;
         self.imageView.alpha = 0;
     } completion:^(BOOL completed){
@@ -81,17 +82,23 @@
     if (self.scrollView.zoomScale == 1) {
         UIPanGestureRecognizer *panRecognizer = (UIPanGestureRecognizer*)sender;
         
-        _swipe = ABS([panRecognizer velocityInView:self.view].y) > 2000;
+        BOOL swipe = ABS([panRecognizer velocityInView:self.view].y) > 2000;
+        _leave = ABS([panRecognizer velocityInView:self.view].y) > 2000;
         
-        if ([panRecognizer state] == UIGestureRecognizerStateEnded && !_swipe) {
+        if ([panRecognizer state] == UIGestureRecognizerStateEnded && !swipe) {
             
             [UIView animateWithDuration:0.2 animations:^{
                 self.imageView.transform = CGAffineTransformMakeTranslation(0, 0);
+                self.imageView.alpha = 1;
             }];
-        } else if (!_swipe) {
+        } else if (!swipe) {
+            float alpha = 1 - ABS([panRecognizer translationInView:self.view].y / self.view.frame.size.height);
             self.imageView.transform = CGAffineTransformMakeTranslation(0, [panRecognizer translationInView:self.view].y);
-        } else if(_swipe) {
+            self.imageView.alpha = alpha;
+        } else if(swipe) {
+            _leave = true;
             [UIView animateWithDuration:0.2 animations:^{
+                self.wrapperView.alpha = 0;
                 self.view.alpha = 0;
                 int toGo;
                 if ([panRecognizer translationInView:self.view].y > 0)

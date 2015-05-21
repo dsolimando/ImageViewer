@@ -13,6 +13,7 @@
                 <outlet property="panGestureRecognizer" destination="TKa-nW-ntV" id="Qlc-o7-VrZ"/>
                 <outlet property="scrollView" destination="TfK-l9-RrF" id="OVP-DC-D4J"/>
                 <outlet property="view" destination="oZp-4e-JPO" id="0UD-vH-nle"/>
+                <outlet property="wrapperView" destination="dYG-xA-f79" id="Vvb-ms-vgK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -70,7 +71,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="dYG-xA-f79" secondAttribute="bottom" id="05E-dj-6Yi"/>
                 <constraint firstItem="dYG-xA-f79" firstAttribute="leading" secondItem="oZp-4e-JPO" secondAttribute="leading" id="3me-IR-Krr"/>
