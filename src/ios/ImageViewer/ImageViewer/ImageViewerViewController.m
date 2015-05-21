@@ -120,12 +120,8 @@
 -(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
     
     if (scale == 1) {
-        self.closeButton.alpha = 1;
-        self.closeButton.transform = CGAffineTransformMakeTranslation(0, -100);
         [UIView animateWithDuration:0.2 animations:^{
-            self.closeButton.transform = CGAffineTransformConcat(
-                CGAffineTransformMakeTranslation(0, 0),
-                CGAffineTransformMakeRotation(M_PI_2/2));
+            self.closeButton.alpha = 1;
         }];
        
     }
