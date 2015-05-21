@@ -8,7 +8,9 @@
             <connections>
                 <outlet property="activityIndicator" destination="OaP-Xa-6gj" id="Ku0-bA-K0P"/>
                 <outlet property="backgroundView" destination="dYG-xA-f79" id="DL5-6h-oQF"/>
+                <outlet property="closeButton" destination="PJ5-jX-5Ut" id="4QY-Jk-dmh"/>
                 <outlet property="imageView" destination="Z6v-gh-Jop" id="NGs-DK-vPH"/>
+                <outlet property="panGestureRecognizer" destination="TKa-nW-ntV" id="Qlc-o7-VrZ"/>
                 <outlet property="scrollView" destination="TfK-l9-RrF" id="OVP-DC-D4J"/>
                 <outlet property="view" destination="oZp-4e-JPO" id="0UD-vH-nle"/>
             </connections>
@@ -24,16 +26,24 @@
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-Xa-6gj">
                             <rect key="frame" x="290" y="290" width="20" height="20"/>
                         </activityIndicatorView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-l9-RrF">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-l9-RrF">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6v-gh-Jop">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <gestureRecognizers/>
-                                    <connections>
-                                        <outletCollection property="gestureRecognizers" destination="PzT-MJ-CMI" appends="YES" id="dig-0f-MIR"/>
-                                    </connections>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ5-jX-5Ut">
+                                    <rect key="frame" x="8" y="35" width="22" height="22"/>
+                                    <color key="tintColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="rjW-u8-Bsc"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Z6v-gh-Jop" firstAttribute="leading" secondItem="TfK-l9-RrF" secondAttribute="leading" id="0Wn-gA-yxm"/>
@@ -44,8 +54,8 @@
                                 <constraint firstAttribute="bottom" secondItem="Z6v-gh-Jop" secondAttribute="bottom" id="yib-Dc-hie"/>
                             </constraints>
                             <connections>
-                                <outletCollection property="gestureRecognizers" destination="BYH-Gf-Flk" appends="YES" id="XuS-0i-Er9"/>
-                                <outletCollection property="gestureRecognizers" destination="PzT-MJ-CMI" appends="YES" id="GL2-mk-rRO"/>
+                                <outletCollection property="gestureRecognizers" destination="BYH-Gf-Flk" appends="YES" id="UBh-g6-wOa"/>
+                                <outletCollection property="gestureRecognizers" destination="TKa-nW-ntV" appends="YES" id="UVz-Hb-4Y5"/>
                             </connections>
                         </scrollView>
                     </subviews>
@@ -67,18 +77,17 @@
                 <constraint firstAttribute="trailing" secondItem="dYG-xA-f79" secondAttribute="trailing" id="8Md-g3-rVg"/>
                 <constraint firstItem="dYG-xA-f79" firstAttribute="top" secondItem="oZp-4e-JPO" secondAttribute="top" id="v4K-9G-8eq"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <point key="canvasLocation" x="529" y="541"/>
         </view>
         <tapGestureRecognizer numberOfTapsRequired="2" id="BYH-Gf-Flk">
             <connections>
-                <action selector="onDoubleTap:" destination="-1" id="KXN-uN-1bm"/>
+                <action selector="onDoubleTap:" destination="-1" id="LY2-R6-CZV"/>
             </connections>
         </tapGestureRecognizer>
-        <swipeGestureRecognizer direction="up" id="PzT-MJ-CMI">
+        <panGestureRecognizer minimumNumberOfTouches="1" id="TKa-nW-ntV">
             <connections>
-                <action selector="onSwipe:" destination="-1" id="Y6E-PB-8bJ"/>
+                <action selector="onPan:" destination="-1" id="ago-1D-2V1"/>
             </connections>
-        </swipeGestureRecognizer>
+        </panGestureRecognizer>
     </objects>
 </document>
