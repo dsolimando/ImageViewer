@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6CC8981B2A22E5004EA6A0 /* close-image-zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6CC8971B2A22E5004EA6A0 /* close-image-zoom.png */; };
 		CE7086651B0DFD0E007B2AB6 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7086641B0DFCE7007B2AB6 /* libCordova.a */; };
 		CEF67BC41B09366800FC0BE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BC31B09366800FC0BE1 /* main.m */; };
 		CEF67BC71B09366800FC0BE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BC61B09366800FC0BE1 /* AppDelegate.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE6CC8971B2A22E5004EA6A0 /* close-image-zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-image-zoom.png"; sourceTree = "<group>"; };
 		CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "../../../../../opt/cordova-ios/CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
 		CEF67BBE1B09366800FC0BE1 /* ImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF67BC21B09366800FC0BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6CC8951B2A22D6004EA6A0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE6CC8971B2A22E5004EA6A0 /* close-image-zoom.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		CE7086601B0DFCE7007B2AB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		CEF67BB51B09366800FC0BE1 = {
 			isa = PBXGroup;
 			children = (
+				CE6CC8951B2A22D6004EA6A0 /* Assets */,
 				CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */,
 				CEF67BC01B09366800FC0BE1 /* ImageViewer */,
 				CEF67BDA1B09366800FC0BE1 /* ImageViewerTests */,
@@ -236,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6CC8981B2A22E5004EA6A0 /* close-image-zoom.png in Resources */,
 				CEF67BEE1B09374500FC0BE1 /* ImageViewerViewController.xib in Resources */,
 				CEF67BCF1B09366800FC0BE1 /* Images.xcassets in Resources */,
 			);

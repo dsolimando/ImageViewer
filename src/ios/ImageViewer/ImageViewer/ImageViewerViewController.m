@@ -27,7 +27,8 @@
     self.panGestureRecognizer.delegate = self;
     self.view.contentMode = UIViewContentModeScaleAspectFit;
     
-    self.closeButton.transform = CGAffineTransformMakeRotation(M_PI_2/2);
+//    [self.closeButton setFrame:CGRectMake(0, 0, 50, 50)];
+//    self.closeButton.transform = CGAffineTransformMakeRotation(M_PI_2/2);
     
     dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0);
     dispatch_async(queue, ^{

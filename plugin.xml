@@ -27,6 +27,7 @@
         <source-file src="src/ios/ImageViewer/ImageViewer/ImageViewerViewController.m" />
         
         <resource-file src="src/ios/ImageViewer/ImageViewer/ImageViewerViewController.xib"/>
+        <resource-file src="src/ios/ImageViewer/close-image-zoom.png"/>
     </platform>
 
 </plugin>

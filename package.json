@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "name": "be.solidx.imageviewer",
+    "cordova_name": "ImageViewer",
+    "description": "Display a zoomable image view for a given URL",
+    "license": "Apache 2.0",
+    "keywords": [
+        "image",
+        "viewer"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": []
+}
