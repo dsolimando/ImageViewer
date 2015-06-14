@@ -34,9 +34,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <gestureRecognizers/>
                                 </imageView>
-                                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ5-jX-5Ut">
-                                    <rect key="frame" x="18" y="37" width="13" height="13"/>
+                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ5-jX-5Ut">
+                                    <rect key="frame" x="0.0" y="16" width="52" height="52"/>
                                     <color key="tintColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                     <state key="normal" image="close-image-zoom.png">
                                         <color key="titleColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="titleShadowColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,12 +48,14 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="leading" secondItem="TfK-l9-RrF" secondAttribute="leading" id="0Wn-gA-yxm"/>
-                                <constraint firstAttribute="trailing" secondItem="Z6v-gh-Jop" secondAttribute="trailing" id="80R-wk-7QC"/>
-                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="top" secondItem="TfK-l9-RrF" secondAttribute="top" id="9tT-Ps-v8c"/>
-                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerX" secondItem="TfK-l9-RrF" secondAttribute="centerX" id="Ibi-5l-OJz"/>
-                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerY" secondItem="TfK-l9-RrF" secondAttribute="centerY" id="UrZ-fn-q1h"/>
-                                <constraint firstAttribute="bottom" secondItem="Z6v-gh-Jop" secondAttribute="bottom" id="yib-Dc-hie"/>
+                                <constraint firstAttribute="bottom" secondItem="Z6v-gh-Jop" secondAttribute="bottom" id="31p-Uw-yFn"/>
+                                <constraint firstItem="PJ5-jX-5Ut" firstAttribute="leading" secondItem="TfK-l9-RrF" secondAttribute="leading" id="3Rk-1c-BK2"/>
+                                <constraint firstItem="PJ5-jX-5Ut" firstAttribute="leading" secondItem="Z6v-gh-Jop" secondAttribute="leading" id="3wR-Ht-N1F"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="top" secondItem="TfK-l9-RrF" secondAttribute="top" id="HI2-k7-LIG"/>
+                                <constraint firstItem="PJ5-jX-5Ut" firstAttribute="top" secondItem="TfK-l9-RrF" secondAttribute="top" constant="16" id="Y8Y-6o-JNJ"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerY" secondItem="TfK-l9-RrF" secondAttribute="centerY" id="kbv-Yo-P42"/>
+                                <constraint firstAttribute="trailing" secondItem="Z6v-gh-Jop" secondAttribute="trailing" id="oef-MF-kyZ"/>
+                                <constraint firstItem="Z6v-gh-Jop" firstAttribute="centerX" secondItem="TfK-l9-RrF" secondAttribute="centerX" id="rJz-J6-aJt"/>
                             </constraints>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="BYH-Gf-Flk" appends="YES" id="UBh-g6-wOa"/>
@@ -62,20 +65,20 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="TfK-l9-RrF" firstAttribute="leading" secondItem="dYG-xA-f79" secondAttribute="leading" id="88T-X6-P5F"/>
-                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerX" secondItem="OaP-Xa-6gj" secondAttribute="centerX" id="R3D-Oe-2lY"/>
-                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerY" secondItem="OaP-Xa-6gj" secondAttribute="centerY" id="ULv-f4-kl9"/>
-                        <constraint firstItem="TfK-l9-RrF" firstAttribute="top" secondItem="dYG-xA-f79" secondAttribute="top" id="WfL-uO-miO"/>
-                        <constraint firstItem="OaP-Xa-6gj" firstAttribute="centerX" secondItem="dYG-xA-f79" secondAttribute="centerX" id="m17-6d-K4P"/>
-                        <constraint firstItem="OaP-Xa-6gj" firstAttribute="centerY" secondItem="dYG-xA-f79" secondAttribute="centerY" id="voe-Da-HEJ"/>
+                        <constraint firstAttribute="trailing" secondItem="TfK-l9-RrF" secondAttribute="trailing" id="Txu-ri-nrz"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerX" secondItem="OaP-Xa-6gj" secondAttribute="centerX" id="ZCh-3x-i8H"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="leading" secondItem="dYG-xA-f79" secondAttribute="leading" id="fPr-PN-FBG"/>
+                        <constraint firstAttribute="bottom" secondItem="TfK-l9-RrF" secondAttribute="bottom" id="ha9-rs-cys"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="centerY" secondItem="OaP-Xa-6gj" secondAttribute="centerY" id="mEo-1N-pRT"/>
+                        <constraint firstItem="TfK-l9-RrF" firstAttribute="top" secondItem="dYG-xA-f79" secondAttribute="top" id="tE9-xz-fjj"/>
                     </constraints>
                 </view>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="dYG-xA-f79" secondAttribute="bottom" id="05E-dj-6Yi"/>
-                <constraint firstItem="dYG-xA-f79" firstAttribute="leading" secondItem="oZp-4e-JPO" secondAttribute="leading" id="3me-IR-Krr"/>
-                <constraint firstAttribute="trailing" secondItem="dYG-xA-f79" secondAttribute="trailing" id="8Md-g3-rVg"/>
-                <constraint firstItem="dYG-xA-f79" firstAttribute="top" secondItem="oZp-4e-JPO" secondAttribute="top" id="v4K-9G-8eq"/>
+                <constraint firstAttribute="trailing" secondItem="dYG-xA-f79" secondAttribute="trailing" id="Vmi-AZ-9WO"/>
+                <constraint firstItem="dYG-xA-f79" firstAttribute="leading" secondItem="oZp-4e-JPO" secondAttribute="leading" id="cCi-zt-VZ0"/>
+                <constraint firstItem="dYG-xA-f79" firstAttribute="top" secondItem="oZp-4e-JPO" secondAttribute="top" id="mR5-ZL-MIm"/>
+                <constraint firstAttribute="bottom" secondItem="dYG-xA-f79" secondAttribute="bottom" id="uQO-sU-5la"/>
             </constraints>
             <point key="canvasLocation" x="529" y="541"/>
         </view>
