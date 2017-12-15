@@ -32,6 +32,7 @@
                                                 <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="KcC-OK-kZa" secondAttribute="bottom" id="8BZ-uG-2yF"/>
                                             <constraint firstItem="KcC-OK-kZa" firstAttribute="top" secondItem="OEC-rW-hjz" secondAttribute="top" id="Dzt-f7-8UN"/>
@@ -40,13 +41,16 @@
                                             <constraint firstItem="KcC-OK-kZa" firstAttribute="leading" secondItem="OEC-rW-hjz" secondAttribute="leading" id="cPa-Um-v9e"/>
                                             <constraint firstAttribute="trailing" secondItem="KcC-OK-kZa" secondAttribute="trailing" id="nqX-Wt-B1i"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="4La-HQ-jYh" appends="YES" id="XyN-hE-BJ2"/>
+                                            <outletCollection property="gestureRecognizers" destination="zWC-Ya-jDN" appends="YES" id="sT8-Q4-J2e"/>
+                                        </connections>
                                     </scrollView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-tR-z98">
                                         <rect key="frame" x="177" y="323" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.001110406091" green="0.001110406091" blue="0.001110406091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="OEC-rW-hjz" firstAttribute="leading" secondItem="3Iv-ng-hKe" secondAttribute="leading" id="RkI-pY-nfM"/>
                                     <constraint firstAttribute="bottom" secondItem="OEC-rW-hjz" secondAttribute="bottom" id="aUs-gI-kPB"/>
@@ -66,6 +70,9 @@
                                     <color key="titleColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.99921331189999996" green="0.97306730870000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onButtonClick:" destination="P0X-Uf-95e" eventType="touchUpInside" id="2QN-x6-EOM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,8 +96,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbL-36-yX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="4La-HQ-jYh"/>
-                <pinchGestureRecognizer id="MU3-pX-Jfw"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="4La-HQ-jYh">
+                    <connections>
+                        <action selector="onPan:" destination="P0X-Uf-95e" id="akx-y1-CU5"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="zWC-Ya-jDN">
+                    <connections>
+                        <action selector="onDoubleTap:" destination="P0X-Uf-95e" id="3js-vC-LFJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="79" y="75"/>
         </scene>
