@@ -32,7 +32,6 @@
                                                 <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="KcC-OK-kZa" secondAttribute="bottom" id="8BZ-uG-2yF"/>
                                             <constraint firstItem="KcC-OK-kZa" firstAttribute="top" secondItem="OEC-rW-hjz" secondAttribute="top" id="Dzt-f7-8UN"/>
@@ -75,7 +74,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UlH-m4-kVM" firstAttribute="leading" secondItem="pka-K1-Lnm" secondAttribute="leading" id="air-9c-7Qh"/>
                             <constraint firstItem="3Iv-ng-hKe" firstAttribute="leading" secondItem="pka-K1-Lnm" secondAttribute="leading" id="eQY-Ev-9hz"/>
@@ -101,7 +99,7 @@
                         <action selector="onPan:" destination="P0X-Uf-95e" id="akx-y1-CU5"/>
                     </connections>
                 </panGestureRecognizer>
-                <tapGestureRecognizer id="zWC-Ya-jDN">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="zWC-Ya-jDN">
                     <connections>
                         <action selector="onDoubleTap:" destination="P0X-Uf-95e" id="3js-vC-LFJ"/>
                     </connections>
