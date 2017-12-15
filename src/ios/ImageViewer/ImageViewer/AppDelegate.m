@@ -21,8 +21,8 @@
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
-    //ImageViewerViewController *controller = self.window.rootViewController;
-    //controller.urlString = @"https://scell-prod.imgix.net/d35fe18f-bbde-42e2-984c-cfc8ade532c9.jpg";
+    ImageViewerViewController *controller = self.window.rootViewController;
+    controller.urlString = @"https://scell-prod.imgix.net/d35fe18f-bbde-42e2-984c-cfc8ade532c9.jpg";
 //    controller.view.layer.frame = self.window.layer.frame;
     
     return YES;
