@@ -18,7 +18,9 @@
     CDVPluginResult* pluginResult = nil;
     NSString *urlString = command.arguments[0];
     
-    ImageViewerViewController *controller = [ImageViewerViewController new];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"ImageViewer" bundle:nil];
+    ImageViewerViewController *controller = [sb instantiateInitialViewController];
+    
     controller.urlString = urlString;
     controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     

@@ -20,12 +20,16 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSMainNibFile</key>
-	<string></string>
+	<key>NSMainStoryboardFile</key>
+	<string>ImageViewer</string>
 	<key>UILaunchStoryboardName</key>
-	<string></string>
+	<string>ImageViewer</string>
+	<key>UIMainStoryboardFile</key>
+	<string>ImageViewer</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

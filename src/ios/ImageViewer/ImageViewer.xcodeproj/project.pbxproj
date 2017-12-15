@@ -7,23 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6BD50E1FE331BD00478161 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6BD50B1FE3319100478161 /* libCordova.a */; };
+		CE6BD5101FE3C5F400478161 /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6BD50F1FE3C5F400478161 /* ImageViewer.storyboard */; };
 		CE6CC8981B2A22E5004EA6A0 /* close-image-zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6CC8971B2A22E5004EA6A0 /* close-image-zoom.png */; };
-		CE7086651B0DFD0E007B2AB6 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7086641B0DFCE7007B2AB6 /* libCordova.a */; };
 		CEF67BC41B09366800FC0BE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BC31B09366800FC0BE1 /* main.m */; };
 		CEF67BC71B09366800FC0BE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BC61B09366800FC0BE1 /* AppDelegate.m */; };
 		CEF67BCF1B09366800FC0BE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF67BCE1B09366800FC0BE1 /* Images.xcassets */; };
 		CEF67BDE1B09366800FC0BE1 /* ImageViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BDD1B09366800FC0BE1 /* ImageViewerTests.m */; };
 		CEF67BED1B09374500FC0BE1 /* ImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BEB1B09374500FC0BE1 /* ImageViewerViewController.m */; };
-		CEF67BEE1B09374500FC0BE1 /* ImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF67BEC1B09374500FC0BE1 /* ImageViewerViewController.xib */; };
 		CEF67BF01B0A7B1E00FC0BE1 /* ImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67BEF1B0A7B1E00FC0BE1 /* ImageViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE7086631B0DFCE7007B2AB6 /* PBXContainerItemProxy */ = {
+		CE6BD50A1FE3319100478161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */;
+			containerPortal = CE6BD5061FE3319100478161 /* CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+		CE6BD50C1FE331A800478161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6BD5061FE3319100478161 /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
 		CEF67BD81B09366800FC0BE1 /* PBXContainerItemProxy */ = {
@@ -36,8 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE6BD5061FE3319100478161 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = ../CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		CE6BD50F1FE3C5F400478161 /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
 		CE6CC8971B2A22E5004EA6A0 /* close-image-zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-image-zoom.png"; sourceTree = "<group>"; };
-		CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "../../../../../opt/cordova-ios/CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
 		CEF67BBE1B09366800FC0BE1 /* ImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF67BC21B09366800FC0BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF67BC31B09366800FC0BE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,7 +57,6 @@
 		CEF67BDD1B09366800FC0BE1 /* ImageViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewerTests.m; sourceTree = "<group>"; };
 		CEF67BEA1B09374500FC0BE1 /* ImageViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewerViewController.h; sourceTree = "<group>"; };
 		CEF67BEB1B09374500FC0BE1 /* ImageViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewerViewController.m; sourceTree = "<group>"; };
-		CEF67BEC1B09374500FC0BE1 /* ImageViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewerViewController.xib; sourceTree = "<group>"; };
 		CEF67BEF1B0A7B1E00FC0BE1 /* ImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewer.m; sourceTree = "<group>"; };
 		CEF67BF31B0A97EF00FC0BE1 /* ImageViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7086651B0DFD0E007B2AB6 /* libCordova.a in Frameworks */,
+				CE6BD50E1FE331BD00478161 /* libCordova.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6BD4D41FE2A70500478161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6BD5071FE3319100478161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BD50B1FE3319100478161 /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CE6CC8951B2A22D6004EA6A0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,22 +103,15 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		CE7086601B0DFCE7007B2AB6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CE7086641B0DFCE7007B2AB6 /* libCordova.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CEF67BB51B09366800FC0BE1 = {
 			isa = PBXGroup;
 			children = (
+				CE6BD5061FE3319100478161 /* CordovaLib.xcodeproj */,
 				CE6CC8951B2A22D6004EA6A0 /* Assets */,
-				CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */,
 				CEF67BC01B09366800FC0BE1 /* ImageViewer */,
 				CEF67BDA1B09366800FC0BE1 /* ImageViewerTests */,
 				CEF67BBF1B09366800FC0BE1 /* Products */,
+				CE6BD4D41FE2A70500478161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,10 +132,10 @@
 				CEF67BCE1B09366800FC0BE1 /* Images.xcassets */,
 				CEF67BEA1B09374500FC0BE1 /* ImageViewerViewController.h */,
 				CEF67BEB1B09374500FC0BE1 /* ImageViewerViewController.m */,
-				CEF67BEC1B09374500FC0BE1 /* ImageViewerViewController.xib */,
 				CEF67BC11B09366800FC0BE1 /* Supporting Files */,
 				CEF67BF31B0A97EF00FC0BE1 /* ImageViewer.h */,
 				CEF67BEF1B0A7B1E00FC0BE1 /* ImageViewer.m */,
+				CE6BD50F1FE3C5F400478161 /* ImageViewer.storyboard */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -165,6 +180,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE6BD50D1FE331A800478161 /* PBXTargetDependency */,
 			);
 			name = ImageViewer;
 			productName = ImageViewer;
@@ -200,6 +216,7 @@
 				TargetAttributes = {
 					CEF67BBD1B09366800FC0BE1 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TCGFKAD6J6;
 					};
 					CEF67BD61B09366800FC0BE1 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -220,8 +237,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CE7086601B0DFCE7007B2AB6 /* Products */;
-					ProjectRef = CE70865F1B0DFCE7007B2AB6 /* CordovaLib.xcodeproj */;
+					ProductGroup = CE6BD5071FE3319100478161 /* Products */;
+					ProjectRef = CE6BD5061FE3319100478161 /* CordovaLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -233,11 +250,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CE7086641B0DFCE7007B2AB6 /* libCordova.a */ = {
+		CE6BD50B1FE3319100478161 /* libCordova.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCordova.a;
-			remoteRef = CE7086631B0DFCE7007B2AB6 /* PBXContainerItemProxy */;
+			remoteRef = CE6BD50A1FE3319100478161 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -248,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6CC8981B2A22E5004EA6A0 /* close-image-zoom.png in Resources */,
-				CEF67BEE1B09374500FC0BE1 /* ImageViewerViewController.xib in Resources */,
+				CE6BD5101FE3C5F400478161 /* ImageViewer.storyboard in Resources */,
 				CEF67BCF1B09366800FC0BE1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +302,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE6BD50D1FE331A800478161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = CE6BD50C1FE331A800478161 /* PBXContainerItemProxy */;
+		};
 		CEF67BD91B09366800FC0BE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEF67BBD1B09366800FC0BE1 /* ImageViewer */;
@@ -387,16 +409,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/dsolimando/opt/cordova-ios/CordovaLib/Classes/**",
-				);
+				DEVELOPMENT_TEAM = TCGFKAD6J6;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 			};
 			name = Debug;
 		};
@@ -404,16 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/dsolimando/opt/cordova-ios/CordovaLib/Classes/**",
-				);
+				DEVELOPMENT_TEAM = TCGFKAD6J6;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 			};
 			name = Release;
 		};

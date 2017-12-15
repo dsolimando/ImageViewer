@@ -18,15 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ImageViewerViewController *controller = [ImageViewerViewController new];
-    controller.urlString = @"http://scell.it/rest/images/55597f43e4b08063d61477b2.jpg";
+    
+    //ImageViewerViewController *controller = self.window.rootViewController;
+    //controller.urlString = @"https://scell-prod.imgix.net/d35fe18f-bbde-42e2-984c-cfc8ade532c9.jpg";
 //    controller.view.layer.frame = self.window.layer.frame;
-    self.window.rootViewController = controller;
     
-    [self.window makeKeyAndVisible];
-    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 
