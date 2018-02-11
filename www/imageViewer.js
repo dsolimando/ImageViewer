@@ -1,8 +1,8 @@
 var exec = require('cordova/exec');
 
 var ImageViewer = {
-	show: function  (imageUrl, callback) {
-		exec (callback, null, 'ImageViewer', 'show', [imageUrl])
+	show: function  (options, callback) {
+		exec (callback, null, 'ImageViewer', 'show', [options.imageUrl, options.backgroundColor || [0,0,0]])
 	}
 }
 

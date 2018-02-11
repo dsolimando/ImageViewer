@@ -25,10 +25,12 @@
     self.activityIndicator.hidesWhenStopped = YES;
     [self.activityIndicator startAnimating];
     self.panGestureRecognizer.delegate = self;
+    self.wrapperView.backgroundColor = [UIColor colorWithRed:self.backgroundColor[0].floatValue/255. green:self.backgroundColor[1].floatValue/255. blue:self.backgroundColor[2].floatValue/255. alpha:1.];
+    
     self.view.contentMode = UIViewContentModeScaleAspectFit;
     
-//    [self.closeButton setFrame:CGRectMake(0, 0, 50, 50)];
-//    self.closeButton.transform = CGAffineTransformMakeRotation(M_PI_2/2);
+    //    [self.closeButton setFrame:CGRectMake(0, 0, 50, 50)];
+    //    self.closeButton.transform = CGAffineTransformMakeRotation(M_PI_2/2);
     
     dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0);
     dispatch_async(queue, ^{
@@ -63,7 +65,7 @@
     double scale = 6.0;
     
     if (self.scrollView.zoomScale > 1)
-        scale = 1.0;
+    scale = 1.0;
     
     [self.scrollView zoomToRect:[self zoomRectForScrollView:self.scrollView withScale:scale withCenter:[recognizer locationInView:self.scrollView]] animated:YES];
 }
@@ -103,15 +105,15 @@
                 self.view.alpha = 0;
                 int toGo;
                 if ([panRecognizer translationInView:self.view].y > 0)
-                    toGo = self.scrollView.frame.size.height / 2;
+                toGo = self.scrollView.frame.size.height / 2;
                 else
-                    toGo = -self.scrollView.frame.size.height / 2;
+                toGo = -self.scrollView.frame.size.height / 2;
                 self.imageView.transform = CGAffineTransformMakeTranslation(0, toGo);
             } completion:^(BOOL b){
                 [self dismissViewControllerAnimated:YES completion:nil];
             }];
         }
-
+        
     }
 }
 
@@ -130,7 +132,7 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.closeButton.alpha = 1;
         }];
-       self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
     else {
         int insetTop = -((self.imageView.frame.size.height/2) - (_fittedImageSize*scale/2));
@@ -157,3 +159,4 @@
 }
 
 @end
+

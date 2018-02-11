@@ -22,6 +22,7 @@
     
     
     ImageViewerViewController *controller = self.window.rootViewController;
+    controller.backgroundColor = @[@0,@0,@0,@1];
     controller.urlString = @"https://scell-prod.imgix.net/d35fe18f-bbde-42e2-984c-cfc8ade532c9.jpg";
 //    controller.view.layer.frame = self.window.layer.frame;
     
