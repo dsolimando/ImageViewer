@@ -17,15 +17,19 @@
     
     CDVPluginResult* pluginResult = nil;
     NSString *urlString = command.arguments[0];
+    NSArray<NSNumber*> *rgbColors = command.arguments[1];
     
-    ImageViewerViewController *controller = [ImageViewerViewController new];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"ImageViewer" bundle:nil];
+    ImageViewerViewController *controller = [sb instantiateInitialViewController];
+    
     controller.urlString = urlString;
+    controller.backgroundColor = rgbColors;
     controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [self.viewController presentViewController:controller animated:YES completion:nil];
     
     if (!command.callbackId)
-        return;
+    return;
     
     if (urlString != nil) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];

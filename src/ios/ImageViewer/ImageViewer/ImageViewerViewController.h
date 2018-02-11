@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
 
 @property NSString *urlString;
+@property NSArray<NSNumber*> *backgroundColor;
 
 - (IBAction)onDoubleTap:(id)sender;
 - (IBAction)onButtonClick:(id)sender;
